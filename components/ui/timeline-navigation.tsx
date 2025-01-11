@@ -16,7 +16,7 @@ export function TimelineNavigation({
     <div className={`flex items-center justify-between ${className}`}>
       <Button
         variant="secondary"
-        size="icon"
+        size="sm"
         onClick={onPrevious}
         className="rounded-full shadow-lg hover:shadow-xl transition-shadow"
         aria-label="Ver imagen anterior"
@@ -25,7 +25,7 @@ export function TimelineNavigation({
       </Button>
       <Button
         variant="secondary"
-        size="icon"
+        size="sm"
         onClick={onNext}
         className="rounded-full shadow-lg hover:shadow-xl transition-shadow"
         aria-label="Ver siguiente imagen"
