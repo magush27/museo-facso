@@ -10,9 +10,9 @@ export function TimelineSectionInfo({ section }: TimelineSectionInfoProps) {
 
   return (
     <CardQuestion className="bg-white/95 backdrop-blur-sm text-center">
-      <CardContent className="p-4">
-        <h2 className="text-base font-bold">{section.title} ({section.period})</h2>
-        <p className="text-muted-foreground italic">{section.question}</p>
+      <CardContent className="p-2">
+        <h2 className="sm:text-sm md:text-base font-bold">{section.title} ({section.period})</h2>
+        <p className="sm:text-xs lg:text-base text-muted-foreground italic">{section.question}</p>
       </CardContent>
     </CardQuestion>
   )
