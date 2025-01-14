@@ -232,7 +232,8 @@ export function TimelineViewer({ images, sections }: TimelineViewerProps) {
           <CardContent className="p-2 mb-10">
             <div className="relative aspect-[9/16] md:aspect-[5/4] w-full">
               <Image
-                src={currentImage.src}
+                src={"/museo-facso" + currentImage.src}
+                // src={currentImage.src}
                 alt={currentImage.alt}
                 fill
                 className="object-contain"
