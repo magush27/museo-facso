@@ -13,7 +13,7 @@ export function TimelineNavigation({
   className = "",
 }: TimelineNavigationProps) {
   return (
-    <div className={`flex items-center justify-between ${className}`}>
+    <div className={`flex items-center justify-center gap-2 mt-4 ${className}`}>
       <Button
         variant="secondary"
         size="icon"
