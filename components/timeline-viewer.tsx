@@ -119,8 +119,8 @@ export function TimelineViewer({ images, sections }: TimelineViewerProps) {
         onSectionSelect={handleSectionSelect} 
         currentSectionId={currentSectionId}
       />
-      <div className="relative px-2">
-        <Card className="overflow-hidden bg-blue-900 mx-10">
+      <div className="relative">
+        <Card className="overflow-hidden bg-blue-900">
           <TimelineSectionInfo section={currentSection} />
           <CardContent className="p-2 mb-10">
             <div className="relative aspect-[9/16] md:aspect-[5/4] w-full">
