@@ -35,6 +35,13 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { TimelineSection } from "@/types/timeline"
 import { ChevronDown, ChevronUp } from "lucide-react" // Assuming you're using Lucide icons
+import { Sora } from "next/font/google"
+
+const sora = Sora({
+  subsets: ['latin'],
+  weight: ['300', '800'],
+  variable: '--font-sora'
+})
 
 interface TimelineMenuProps {
   sections: TimelineSection[]
@@ -55,7 +62,7 @@ export function TimelineMenu({ sections, onSectionSelect, currentSectionId }: Ti
       <div className="md:hidden">
         <Button
           variant="ghost"
-          className="w-full mb-2 text-sm flex items-center justify-between"
+          className={`w-full text-xs flex items-center justify-between ${sora.className} sora-bold bg-white`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span>
@@ -67,13 +74,13 @@ export function TimelineMenu({ sections, onSectionSelect, currentSectionId }: Ti
         </Button>
 
         {isMenuOpen && (
-          <nav className="w-full bg-white dark:bg-gray-800 shadow-md rounded-md">
+          <nav className="w-full bg-white mt-[0.05rem] dark:bg-gray-800 shadow-md rounded-md">
             <ul className="flex flex-wrap justify-center">
               {sections.map((section) => (
                 <li key={section.id} className="m-1">
                   <Button
                     variant={section.id === currentSectionId ? "default" : "ghost"}
-                    className="py-2 px-3 text-sm whitespace-normal text-center h-auto"
+                    className={`py-2 px-3 text-sm whitespace-normal text-center h-auto ${sora.className} sora-light`}
                     onClick={() => {
                       onSectionSelect(section.id)
                       setHasSelected(true) // Mark as selected after choosing a section
@@ -96,7 +103,7 @@ export function TimelineMenu({ sections, onSectionSelect, currentSectionId }: Ti
             <li key={section.id} className="m-1">
               <Button
                 variant={section.id === currentSectionId ? "default" : "ghost"}
-                className="py-2 px-3 text-sm md:text-base whitespace-normal text-center h-auto"
+                className={`py-2 px-3 text-sm md:text-base whitespace-normal text-center h-auto ${sora.className} sora-light`}
                 onClick={() => onSectionSelect(section.id)}
               >
                 {section.title}
