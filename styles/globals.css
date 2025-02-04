@@ -58,6 +58,16 @@
   }
 }
 
+.sora-light {
+  font-family: var(--font-sora);
+  font-weight: 300;
+}
+
+.sora-bold {
+  font-family: var(--font-sora);
+  font-weight: 800;
+}
+
 .z-1000 {
   z-index: 1000;
 }
