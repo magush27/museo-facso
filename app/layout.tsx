@@ -1,8 +1,12 @@
 import "@/styles/globals.css"
-import { Inter } from 'next/font/google'
+import { Sora } from "next/font/google"
 import { Metadata } from "next"
 
-const inter = Inter({ subsets: ["latin"] })
+const sora = Sora({
+  subsets: ['latin'],
+  weight: ['300', '800'],
+  variable: '--font-sora'
+})
 
 export const metadata: Metadata = {
   title: "Museo Virtual de Ciencias Sociales - UNSJ",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={sora.className}>{children}</body>
     </html>
   )
 }
