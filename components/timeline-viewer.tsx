@@ -256,6 +256,11 @@ export function TimelineViewer({ images, sections }: TimelineViewerProps) {
     setIsSwiping(false)
   }
 
+  const { start, end } = getSectionBounds();
+  const isAtStart = currentIndex === start;
+  const isAtEnd = currentIndex === end;
+
+
   return (
     <div 
       id="timeline-viewer"
@@ -282,7 +287,8 @@ export function TimelineViewer({ images, sections }: TimelineViewerProps) {
           <TimelineSectionInfo section={currentSection} />
             <div className="relative aspect-[9/16] md:aspect-[5/4] w-full flex justify-center">
               <Image
-                src={"/museo-facso" + currentImage.src}
+                // src={"/museo-facso" + currentImage.src}
+                src={currentImage.src}
                 alt={currentImage.alt}
                 fill
                 className="object-contain xl:h-max-xl p-2"
@@ -294,6 +300,8 @@ export function TimelineViewer({ images, sections }: TimelineViewerProps) {
         <TimelineNavigation
           onPrevious={goToPrevious}
           onNext={goToNext}
+          showPrevious={!isAtStart}
+          showNext={!isAtEnd}  
           className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center gap-10"
         />
       </div>

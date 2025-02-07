@@ -16,7 +16,7 @@ export function TimelineSectionInfo({ section }: TimelineSectionInfoProps) {
   if (!section) return null
 
   return (
-    <CardQuestion className="bg-[#a8caec] backdrop-blur-sm text-center">
+    <CardQuestion className="bg-white backdrop-blur-sm text-center">
       <CardContent className="p-2">
         <h2 className={`sm:text-sm md:text-base text-[#174290] ${sora.className} sora-bold`}>{section.title} ({section.period})</h2>
         <p className={`sm:text-xs lg:text-base text-[#174290] ${sora.className} sora-light`}>{section.question}</p>

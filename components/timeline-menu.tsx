@@ -80,7 +80,7 @@ export function TimelineMenu({ sections, onSectionSelect, currentSectionId }: Ti
                 <li key={section.id} className="m-1">
                   <Button
                     variant={section.id === currentSectionId ? "default" : "ghost"}
-                    className={`py-2 px-3 text-sm whitespace-normal text-center h-auto ${sora.className} sora-light`}
+                    className={`py-2 px-3 text-sm whitespace-normal text-center h-auto ${sora.className} sora-bold`}
                     onClick={() => {
                       onSectionSelect(section.id)
                       setHasSelected(true) // Mark as selected after choosing a section
@@ -103,7 +103,7 @@ export function TimelineMenu({ sections, onSectionSelect, currentSectionId }: Ti
             <li key={section.id} className="m-1">
               <Button
                 variant={section.id === currentSectionId ? "default" : "ghost"}
-                className={`py-2 px-3 text-sm md:text-base whitespace-normal text-center h-auto ${sora.className} sora-light`}
+                className={`py-2 px-3 text-sm md:text-base whitespace-normal text-center h-auto ${sora.className} sora-bold`}
                 onClick={() => onSectionSelect(section.id)}
               >
                 {section.title}
