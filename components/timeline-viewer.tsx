@@ -287,8 +287,8 @@ export function TimelineViewer({ images, sections }: TimelineViewerProps) {
           <TimelineSectionInfo section={currentSection} />
             <div className="relative aspect-[9/16] md:aspect-[5/4] w-full flex justify-center">
               <Image
-                // src={"/museo-facso" + currentImage.src}
-                src={currentImage.src}
+                src={"/museo-facso" + currentImage.src}
+                // src={currentImage.src}
                 alt={currentImage.alt}
                 fill
                 className="object-contain xl:h-max-xl p-2"
