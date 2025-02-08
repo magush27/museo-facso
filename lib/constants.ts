@@ -53,14 +53,15 @@ export const TIMELINE_IMAGES: TimelineImage[] = [
   },
   {
     id: 10,
-    src: "/images/Placas-09.png",
-    alt: "En 1963, fotografía del rostro del Dr. Indalecio Carmona Rios. Vocal de la Comisión Pro Universidad de San Juan y otra fotografía del Dr. Leopoldo Bravo, gobernador de la provincia de San Juan en ese entonces.",
-  },
-  {
-    id: 11,
     src: "/images/Placa-Primera decada.png",
     alt: "Primera década (1964-1974). ¿Cómo se gestó la Universidad Provincial Domingo Faustino Sarmiento y quién gobernaba la provincia de San Juan?",
   },
+  {
+    id: 11,
+    src: "/images/Placas-09.png",
+    alt: "En 1963, fotografía del rostro del Dr. Indalecio Carmona Rios. Vocal de la Comisión Pro Universidad de San Juan y otra fotografía del Dr. Leopoldo Bravo, gobernador de la provincia de San Juan en ese entonces.",
+  },
+  
   {
     id: 12,
     src: "/images/Placas-10.png",
@@ -525,17 +526,17 @@ export const TIMELINE_SECTIONS: TimelineSection[] = [
     title: "Orígenes de la Facultad",
     period: "1954-1964",
     question: "¿Quiénes fueron los pioneros de la Escuela de Periodismo?",
-    imageRange: "Placas-03 a placas-09",
+    imageRange: "Placas-03 a placas-08",
     startIndex: 3,
-    endIndex: 10,
+    endIndex: 9,
   },
   {
     id: 2,
     title: "Primera década",
     period: "1964-1974",
     question: "¿Cómo se gestó la Universidad Provincial Domingo Faustino Sarmiento y quién gobernaba la provincia de San Juan?",
-    imageRange: "Placas-10 a placas-021",
-    startIndex: 11,
+    imageRange: "Placas-09 a placas-021",
+    startIndex: 10,
     endIndex: 23,
   },
   {
@@ -581,7 +582,7 @@ export const TIMELINE_SECTIONS: TimelineSection[] = [
     question: "Cuánta historia… cambio de Planes de Estudio, actos de Jubilados, refuncionalización de la Biblioteca Central, Innovaciones en el espacio físico del Complejo Universitario \"Islas Malvinas\" (C.U.I.M.).",
     imageRange: "Placas-082 a placas-092",
     startIndex: 89,
-    endIndex: 100,
+    endIndex: 102,
   },
 ]
 
